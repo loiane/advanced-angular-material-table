@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { AdvancedMaterialTableComponent } from './advanced-material-table/advanced-material-table.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, AdvancedMaterialTableComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
+    <app-advanced-material-table></app-advanced-material-table>
   `,
   styles: [],
 })
