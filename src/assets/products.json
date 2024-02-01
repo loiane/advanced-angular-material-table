@@ -1,0 +1,22 @@
+[
+    {"id": 1, "name": "iPhone 13", "category": "Smartphone", "price": 699, "stock": 100, "created": "2021-09-14", "active": true},
+    {"id": 2, "name": "iPhone 13 Pro", "category": "Smartphone", "price": 999, "stock": 80, "created": "2021-09-14", "active": true},
+    {"id": 3, "name": "iPhone 13 Pro Max", "category": "Smartphone", "price": 1099, "stock": 70, "created": "2021-09-14", "active": true},
+    {"id": 4, "name": "iPhone 13 Mini", "category": "Smartphone", "price": 699, "stock": 50, "created": "2021-09-14", "active": true},
+    {"id": 5, "name": "iPad Pro", "category": "Tablet", "price": 799, "stock": 100, "created": "2021-04-20", "active": true},
+    {"id": 6, "name": "iPad Air", "category": "Tablet", "price": 599, "stock": 100, "created": "2020-09-15", "active": true},
+    {"id": 7, "name": "iPad Mini", "category": "Tablet", "price": 499, "stock": 100, "created": "2021-09-14", "active": true},
+    {"id": 8, "name": "iPad", "category": "Tablet", "price": 329, "stock": 100, "created": "2020-09-15", "active": true},
+    {"id": 9, "name": "MacBook Pro", "category": "Laptop", "price": 1299, "stock": 100, "created": "2020-11-10", "active": true},
+    {"id": 10, "name": "MacBook Air", "category": "Laptop", "price": 999, "stock": 100, "created": "2020-11-10", "active": true},
+    {"id": 11, "name": "iMac", "category": "Desktop", "price": 1299, "stock": 100, "created": "2021-04-20", "active": true},
+    {"id": 12, "name": "Mac Mini", "category": "Desktop", "price": 699, "stock": 100, "created": "2020-11-10", "active": true},
+    {"id": 13, "name": "Apple Watch Series 7", "category": "Smartwatch", "price": 399, "stock": 100, "created": "2021-09-14", "active": true},
+    {"id": 14, "name": "Apple Watch SE", "category": "Smartwatch", "price": 279, "stock": 100, "created": "2020-09-15", "active": true},
+    {"id": 15, "name": "AirPods Pro", "category": "Earbuds", "price": 249, "stock": 100, "created": "2019-10-30", "active": true},
+    {"id": 16, "name": "AirPods", "category": "Earbuds", "price": 159, "stock": 100, "created": "2019-03-20", "active": true},
+    {"id": 17, "name": "AirPods Max", "category": "Headphones", "price": 549, "stock": 100, "created": "2020-12-08", "active": true},
+    {"id": 18, "name": "HomePod Mini", "category": "Speaker", "price": 99, "stock": 100, "created": "2020-11-10", "active": true},
+    {"id": 19, "name": "Apple TV 4K", "category": "Media Player", "price": 179, "stock": 100, "created": "2021-04-20", "active": true},
+    {"id": 20, "name": "Apple Pencil", "category": "Accessory", "price": 99, "stock": 100, "created": "2018-11-07", "active": true}
+]
