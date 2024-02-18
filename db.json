@@ -1,4 +1,4 @@
-[
+{"products":[
     {"id": 1, "name": "iPhone 13", "category": "Smartphone", "price": 699, "stock": 100, "created": "2021-09-14", "active": true},
     {"id": 2, "name": "iPhone 13 Pro", "category": "Smartphone", "price": 999, "stock": 80, "created": "2021-09-14", "active": true},
     {"id": 3, "name": "iPhone 13 Pro Max", "category": "Smartphone", "price": 1099, "stock": 70, "created": "2021-09-14", "active": true},
@@ -19,4 +19,4 @@
     {"id": 18, "name": "HomePod Mini", "category": "Speaker", "price": 99, "stock": 100, "created": "2020-11-10", "active": true},
     {"id": 19, "name": "Apple TV 4K", "category": "Media Player", "price": 179, "stock": 100, "created": "2021-04-20", "active": true},
     {"id": 20, "name": "Apple Pencil", "category": "Accessory", "price": 99, "stock": 100, "created": "2018-11-07", "active": true}
-]
+]}
