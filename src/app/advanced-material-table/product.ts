@@ -7,3 +7,8 @@ export interface Product {
     created: Date;
     active: boolean;
 }
+
+export interface ProductPage {
+    data: Product[];
+    items: number;
+}

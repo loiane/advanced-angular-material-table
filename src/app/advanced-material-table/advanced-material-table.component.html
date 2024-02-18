@@ -1,4 +1,5 @@
-<table mat-table [dataSource]="productService.loadProducts()" class="mat-elevation-z8">
+@if (products$ | async; as productPage) {
+<table mat-table [dataSource]="productPage.data" class="mat-elevation-z8">
   <!-- Name Column -->
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef>Name</th>
@@ -33,3 +34,14 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
+
+<mat-paginator
+  [pageSizeOptions]="[5, 10, 15]"
+  showFirstLastButtons
+  [length]="productPage.items"
+  [pageIndex]="pageIndex"
+  [pageSize]="pageSize"
+  (page)="refresh($event)"
+  aria-label="Select page of courses"
+></mat-paginator>
+}
