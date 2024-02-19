@@ -10,8 +10,17 @@ export class ProductService {
 
   private http = inject(HttpClient);
 
-  loadProducts(page = 0, pageSize = 5) {
-    return this.http.get<ProductPage>('http://localhost:3000/products',
-      { params: { _page: page + 1, _per_page: pageSize } });
+  loadProducts(page = 0, pageSize = 5, sort = '', direction = '') {
+    let _sort: string = '';
+    if (direction !== '') {
+      _sort = direction === 'desc' ? '-' + sort: sort;
+    }
+
+    const params: any = { _page: page + 1, _per_page: pageSize };
+    if (_sort !== '') {
+      params._sort = _sort;
+    }
+
+    return this.http.get<ProductPage>('http://localhost:3000/products', { params });
   }
 }

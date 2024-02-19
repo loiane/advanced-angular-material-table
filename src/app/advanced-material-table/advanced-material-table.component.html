@@ -1,34 +1,33 @@
-@if (products$ | async; as productPage) {
-<table mat-table [dataSource]="productPage.data" class="mat-elevation-z8">
+<table mat-table [dataSource]="productPage.data" class="mat-elevation-z8" matSort matSortDisableClear (matSortChange)="onSortChange($event)">
   <!-- Name Column -->
   <ng-container matColumnDef="name">
-    <th mat-header-cell *matHeaderCellDef>Name</th>
-    <td mat-cell *matCellDef="let product">{{ product.name }}</td>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header="name">Name</th>
+    <td mat-cell *matCellDef="let row">{{ row.name }}</td>
   </ng-container>
   <!-- Category Column -->
   <ng-container matColumnDef="category">
-    <th mat-header-cell *matHeaderCellDef>Category</th>
-    <td mat-cell *matCellDef="let product">{{ product.category }}</td>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Category</th>
+    <td mat-cell *matCellDef="let row">{{ row.category }}</td>
   </ng-container>
   <!-- Price Column -->
   <ng-container matColumnDef="price">
-    <th mat-header-cell *matHeaderCellDef>Price</th>
-    <td mat-cell *matCellDef="let product">{{ product.price }}</td>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Price</th>
+    <td mat-cell *matCellDef="let row">{{ row.price }}</td>
   </ng-container>
   <!-- Stock Column -->
   <ng-container matColumnDef="stock">
-    <th mat-header-cell *matHeaderCellDef>Stock</th>
-    <td mat-cell *matCellDef="let product">{{ product.stock }}</td>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Stock</th>
+    <td mat-cell *matCellDef="let row">{{ row.stock }}</td>
   </ng-container>
   <!-- Created Column -->
   <ng-container matColumnDef="created">
-    <th mat-header-cell *matHeaderCellDef>Created</th>
-    <td mat-cell *matCellDef="let product">{{ product.created }}</td>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Created</th>
+    <td mat-cell *matCellDef="let row">{{ row.created }}</td>
   </ng-container>
   <!-- Active Column -->
   <ng-container matColumnDef="active">
-    <th mat-header-cell *matHeaderCellDef>Active</th>
-    <td mat-cell *matCellDef="let product">{{ product.active }}</td>
+    <th mat-header-cell *matHeaderCellDef mat-sort-header>Active</th>
+    <td mat-cell *matCellDef="let row">{{ row.active }}</td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -38,10 +37,5 @@
 <mat-paginator
   [pageSizeOptions]="[5, 10, 15]"
   showFirstLastButtons
-  [length]="productPage.items"
-  [pageIndex]="pageIndex"
-  [pageSize]="pageSize"
-  (page)="refresh($event)"
-  aria-label="Select page of courses"
+  aria-label="Select page of products"
 ></mat-paginator>
-}
