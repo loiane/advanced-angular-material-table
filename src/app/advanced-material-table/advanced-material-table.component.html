@@ -1,4 +1,5 @@
-<table mat-table [dataSource]="productPage.data" class="mat-elevation-z8" matSort matSortDisableClear (matSortChange)="onSortChange($event)">
+<table mat-table [dataSource]="productPage.data" class="mat-elevation-z8"
+  matSort matSortDisableClear (matSortChange)="onSortChange($event)">
   <!-- Name Column -->
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef mat-sort-header="name">Name</th>
@@ -37,5 +38,9 @@
 <mat-paginator
   [pageSizeOptions]="[5, 10, 15]"
   showFirstLastButtons
+  [length]="productPage.items"
+  [pageIndex]="pageIndex"
+  [pageSize]="pageSize"
+  (page)="refresh($event)"
   aria-label="Select page of products"
 ></mat-paginator>
