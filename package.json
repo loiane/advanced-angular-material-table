@@ -27,7 +27,7 @@
     "@angular-devkit/build-angular": "^18.2.1",
     "@angular/cli": "^18.2.1",
     "@angular/compiler-cli": "^18.2.1",
-    "json-server": "^1.0.0-beta.1",
+    "json-server": "^1.0.0-beta.2",
     "typescript": "~5.5.4"
   }
 }
