@@ -9,11 +9,10 @@ import { ProductPage } from './product';
 import { ProductService } from './product.service';
 
 @Component({
-  selector: 'app-advanced-material-table',
-  standalone: true,
-  imports: [MatTableModule, MatPaginatorModule, AsyncPipe, MatSortModule],
-  templateUrl: './advanced-material-table.component.html',
-  styleUrls: ['./advanced-material-table.component.scss']
+    selector: 'app-advanced-material-table',
+    imports: [MatTableModule, MatPaginatorModule, AsyncPipe, MatSortModule],
+    templateUrl: './advanced-material-table.component.html',
+    styleUrls: ['./advanced-material-table.component.scss']
 })
 export class AdvancedMaterialTableComponent implements OnInit {
 
